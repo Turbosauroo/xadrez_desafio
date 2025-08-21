@@ -1,75 +1,79 @@
 # ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
+# ♟️ Desafio de Xadrez – MateCheck  
 
-# Desafio de Xadrez - MateCheck
+📅 Atualizado: 21/02  
 
-Bem-vindo ao desafio de Xadrez da MateCheck! Este projeto tem como objetivo testar e determinar os limites de utilização do código dentro do jogo utilizando estruturas de repetição e funções avançadas.
+Este projeto foi desenvolvido como parte de um **desafio prático da MateCheck**, com o objetivo de aplicar e consolidar conceitos de **programação estruturada em C**.  
+O sistema simula a movimentação de peças de **Xadrez** utilizando **estruturas de repetição, funções recursivas e controle de fluxo**, explorando diferentes abordagens para resolução de problemas.  
 
-## Níveis do Desafio
+---
 
-### 🏅 Nível Novato
+## 🎯 Objetivos  
 
-A equipe de testes da MateCheck recebeu uma solicitação para determinar os limites de utilização do código dentro do jogo. Para isso, a equipe de programação solicitou o envio de blocos de código contendo loops (estruturas de repetição) para avaliação de desempenho e possibilidades de aplicação.
+- Implementar **movimentações de peças** (Bispo, Torre, Rainha e Cavalo) em um tabuleiro virtual.  
+- Aplicar **estruturas de repetição** (`for`, `while`, `do-while`) em cenários práticos.  
+- Utilizar **funções recursivas** para substituir loops simples.  
+- Demonstrar domínio sobre **controle de fluxo** com `continue` e `break`.  
+- Garantir um código **organizado, legível e manutenível**, com boa documentação.  
 
-**Movimentação das Peças:**
-- Bispo: 5 casas na diagonal superior direita
-- Torre: 5 casas para a direita
-- Rainha: 8 casas para a esquerda
+---
 
-No jogo, apenas possuímos movimentação para quatro direções, mas o Bispo se mexe na diagonal. Com isso, foi adicionada uma condição para movimentação dessa peça, em que, para movê-lo, utilizamos o comando `printf` e, em seu valor, colocamos a direção usando a combinação de direções básicas. 
+## 🚀 Estrutura do Desafio  
 
-**Requisitos Funcionais:**
-1. **Entrada de Dados:**
-   - Os valores necessários devem ser inseridos manualmente a partir de variáveis dentro do código.
-   - Será permitido o uso de constantes para facilitar a escrita do código e evitar repetição de valores.
-2. **Estruturas de Repetição:**
-   - Os códigos precisam ser desenvolvidos utilizando estruturas de repetição.
-3. **Saída de Dados:**
-   - O sistema deve exibir os resultados de cada procedimento de forma clara e legível.
+O desenvolvimento foi dividido em **três níveis de complexidade**, permitindo evolução progressiva:  
 
-**Requisitos Não Funcionais:**
-1. **Performance:**
-   - O sistema deve executar os cálculos e apresentar os resultados sem atrasos perceptíveis.
-2. **Documentação:**
-   - O código deve ser bem documentado, incluindo comentários detalhados sobre a função de cada parte do código.
-3. **Manutenibilidade:**
-   - O código deve ser escrito de forma clara, empregando nomes de variáveis que permitam o fácil entendimento.
+### 🟢 Nível Novato  
+- Movimentação simples de peças com **loops básicos**.  
+- Implementação:  
+  - **Bispo** → 5 casas na diagonal superior direita  
+  - **Torre** → 5 casas para a direita  
+  - **Rainha** → 8 casas para a esquerda  
+- Saída exibida via `printf` com direções claras.  
 
-**Instruções Detalhadas:**
-1. **Entrada de Dados:**
-   - Inclua a biblioteca padrão de entrada e saída no início do seu programa.
-   - Declare variáveis constantes para definir os valores a serem comparados dentro das estruturas condicionais.
-2. **Estruturas de Repetição:**
-   - Utilize cada uma das diferentes estruturas de repetição apresentadas.
-3. **Saída:**
-   - As saídas deverão ser mostradas de forma clara e organizada, com a direção da peça.
+### 🟡 Nível Aventureiro  
+- Implementação da movimentação do **Cavalo** em “L”.  
+- Uso de **loops aninhados** obrigatórios.  
+- Estruturas de repetição: `for` combinado com `while` ou `do-while`.  
 
-**Nomenclatura:**
+### 🔴 Nível Mestre  
+- Substituição de loops simples por **funções recursivas**.  
+- Regras implementadas:  
+  - **Bispo** → diagonal superior direita com recursão  
+  - **Torre** → deslocamento lateral  
+  - **Rainha** → deslocamento horizontal  
+  - **Cavalo** → movimento em “L” com múltiplas variáveis e condições  
+- Utilização de **continue** e **break** em estruturas de repetição.  
 
-printf("Cima\n");
-printf("Baixo\n");
-printf("Esquerda\n");
-printf("Direita\n");
+---
 
-### 🏅 Nível Aventureiro
-Agora que já conseguimos mover as peças mais simples usando loops, os desenvolvedores pediram para elaborar os loops de outra forma. Para o desafio, moveremos o cavalo, que possui sua movimentação em L. O cavalo deve se movimentar para baixo e para a esquerda, usando pelo menos duas estruturas de repetição: uma deve ser for e a outra pode ser while ou do-while.
+## ⚙️ Tecnologias e Conceitos Utilizados  
 
-**Movimentação do Cavalo:**
+- **Linguagem C**  
+- Estruturas de repetição (`for`, `while`, `do-while`)  
+- **Loops aninhados**  
+- **Funções recursivas**  
+- Controle de fluxo (`continue`, `break`)  
+- Boas práticas de programação:  
+  - Código documentado  
+  - Uso de constantes  
+  - Nomenclatura clara e descritiva  
 
-Mover o cavalo em L utilizando loops aninhados.
-Obs: É obrigatório o uso de loops aninhados.
+---
 
-### 🥇 Nível Mestre
-Para o desafio final, as peças que utilizam loops simples terão seus códigos trocados por **funções recursivas**, e a movimentação do cavalo utilizará loops com variáveis múltiplas e/ou condições múltiplas, permitindo o uso de continue e break.
+## 🏆 Resultados  
 
-**Movimentação das Peças:**
+Este projeto evidencia:  
+✅ Capacidade de **aplicar conceitos fundamentais e avançados em C**  
+✅ Criação de soluções progressivas e escaláveis  
+✅ Domínio de **estruturas de repetição e recursividade**  
+✅ Escrita de **código limpo, organizado e comentado**  
+✅ Preparação para cenários práticos do mercado de trabalho  
 
-**Bispo**: 5 casas na diagonal direita para cima
-**Torre**: 5 casas para a direita
-**Rainha**: 8 casas para a esquerda
-**Cavalo**: 1 vez em L para cima à direita
-Obs: É obrigatório o uso de loops aninhados na movimentação do bispo e funções recursivas.
+---
 
-Ao concluir este desafio, você terá um conhecimento mais profundo de estruturas complexas e elaboradas, amplamente utilizadas no mercado de trabalho. Boa sorte e boa programação!
+## 📌 Conclusão  
 
-Equipe de Ensino - MateCheck
+O **Desafio de Xadrez – MateCheck** é um projeto acadêmico e prático que combina **lógica de programação, algoritmos e boas práticas de desenvolvimento**, demonstrando versatilidade no uso da linguagem C e capacidade de estruturar soluções de forma clara e eficiente.  
+
+---
+✍️ **Autor:** [Lucas Fernandes Da Cunha]  
